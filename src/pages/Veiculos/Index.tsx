@@ -130,6 +130,91 @@ export default function Veiculos() {
 
       <div className="w-full max-w-[1920px] mx-auto px-4 mt-12 mb-12 ">
         <div className="grid md:grid-cols-5 justify-between">
+          <div className={`md:col-span-1 ${style.line}`}>
+            <div className="mb-8 md:pr-8">
+              <div className="mb-8">
+                <h3 className="rubik text-xl font-bold dark">
+                  Pesquise por aqui:
+                </h3>
+              </div>
+              <div className="mb-8">
+                {/* <label htmlFor="modelos-select">Informe o modelo</label> */}
+                <input
+                  type="text"
+                  id="modelos-select"
+                  name="modelo"
+                  placeholder="Informe o modelo"
+                  onChange={filterModelo}
+                />
+              </div>
+              <div className="mb-8">
+                {/* <label htmlFor="marcas-select">Marca</label> */}
+                <select
+                  id="marcas-select"
+                  name="marca"
+                  onChange={filterMarca}
+                  className="select"
+                >
+                  <option>Marca</option>
+                  <option value="">TODOS</option>
+                  <option value="CHEVROLET">CHEVROLET</option>
+                  <option value="CITROEN">CITROEN</option>
+                  <option value="FIAT">FIAT</option>
+                  <option value="FORD">FORD</option>
+                  <option value="HONDA">HONDA</option>
+                  <option value="HYUNDAI">HYUNDAI</option>
+                  <option value="JEEP">JEEP</option>
+                  <option value="KIA">KIA</option>
+                  <option value="NISSAN">NISSAN</option>
+                  <option value="PEUGEOT">PEUGEOT</option>
+                  <option value="RENAULT">RENAULT</option>
+                  <option value="TOYOTA">TOYOTA</option>
+                  <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                </select>
+              </div>
+              <div className="mb-8">
+                {/* <label htmlFor="observacao-select">Carroceria</label> */}
+                <select
+                  id="observacao-select"
+                  name="carroceria"
+                  onChange={filterObservacao}
+                  className="select"
+                >
+                  <option>Carroceria</option>
+                  <option value="">TODOS</option>
+                  <option value="HATCH">HATCH</option>
+                  <option value="SEDAN">SEDAN</option>
+                  <option value="SUV">SUV</option>
+                  <option value="UTILITÁRIO">UTILITÁRIO</option>
+                  <option value="MINIVAN">MINIVAN</option>
+                  <option value="PICAPE">PICAPE</option>
+                </select>
+              </div>
+              <div className="mb-8">
+                {/* <label htmlFor="ano-select">Ano</label> */}
+                <select
+                  id="ano-select"
+                  name="ano"
+                  onChange={filterAno}
+                  className="select"
+                >
+                  <option>Ano</option>
+                  <option value="">TODOS</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                </select>
+              </div>
+            </div>
+          </div>
 
           <div className="md:col-span-5 md:pl-8">
             <div className="grid md:grid-cols-3 gap-8 justify-flex-start">
